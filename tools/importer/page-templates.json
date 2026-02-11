@@ -1,0 +1,33 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://wknd-trendsetters.site"],
+      "description": "WKND Trendsetters homepage with hero section (heading, description, CTAs, 2 hero images in columns), feature text cards (8 no-image cards), blog image cards (4 cards with images), tabbed content (3 tabs), FAQ accordion (4 Q&A items), and CTA banner (columns with text and buttons)",
+      "blocks": [
+        {
+          "name": "columns",
+          "instances": [
+            ".section.utility-overflow-hidden .w-layout-grid",
+            ".section:not(.secondary-section):not(.inverse-section):last-child .w-layout-grid"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".section:not(.secondary-section):not(.inverse-section):not(.utility-overflow-hidden) .w-layout-grid",
+            ".section.secondary-section:not(.utility-overflow-hidden) .w-layout-grid:last-child"
+          ]
+        },
+        {
+          "name": "tabs",
+          "instances": [".section.inverse-section .w-tabs"]
+        },
+        {
+          "name": "accordion",
+          "instances": [".section.secondary-section > .container.small-container > .flex-vertical"]
+        }
+      ]
+    }
+  ]
+}
